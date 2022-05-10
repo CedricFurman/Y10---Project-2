@@ -1,0 +1,436 @@
+
+.header {
+
+	background-color: rgba(90, 142, 179);
+
+	height: 75px;
+
+}
+
+.logo {
+
+    margin-left: 220;
+
+	width: 100;
+
+	height: 65px;
+
+	padding: 5px;
+
+}
+
+.searchBar {
+
+	float: right;
+
+	margin-top: 20;
+
+	height: 35;
+
+    font-size: 20;
+
+	font-family: "Trebuchet MS";
+
+}
+
+.entryButton {
+
+	float: right;
+
+	margin-top: 20;
+
+	margin-right: 220;
+
+	height: 35;
+
+    font-size: 20;
+
+	font-family: "Trebuchet MS";
+
+}
+
+.navigationBarSection {
+
+	background-color: rgba(24, 67, 90);
+
+}
+
+/* A list class for the navigation bar */
+ul.navigationBar {
+
+  	list-style-type: none;
+
+  	margin: 0;
+
+	padding: 0;
+
+	height: 100px;
+
+	overflow: hidden;
+
+	position: sticky;
+
+}
+
+/* A class for the navigation items */
+.navigationBar a {
+
+	display: block;
+
+	float: left;
+
+	width: 200px;
+
+	height: 100px;
+
+	text-align: center;
+
+  	text-decoration: none;
+
+  	color: rgb(255, 255, 255);
+
+  	font-size: 24;
+
+	font-weight: 0;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This is the status of a navigation item being hovered over */
+.navigationBar a:hover {
+
+	background-color: rgba(24, 90, 47) !important;
+
+	color: rgb(255, 255, 255);
+
+	transition: 1s;
+
+}
+
+.titleSection {
+
+	z-index: 1;
+
+    width: 1000;
+
+    height: 350;
+
+    margin-left: 220;
+
+	margin-right: 220;
+
+	position: absolute;
+
+	align-items: center;
+
+}
+
+.titleText {
+
+	z-index: 3;
+
+    width: 1110;
+
+	height: 350;
+    
+    color: rgba(28, 154, 255);
+
+    font-size: 96;
+
+    font-weight: bolder;
+
+    font-family: "Trebuchet MS";
+
+    text-align: center;
+
+    overflow: visible !important;
+
+    letter-spacing: 11px;
+
+	position: absolute;
+
+	margin-left: -55;
+
+	margin-right: -55;
+
+}
+
+.informationSection {
+
+	width: 1040;
+
+	height: 380;
+
+	background-color: rgb(221, 221, 221);
+
+	margin-left: 200;
+
+	margin-right: 200;
+
+	align-items: center;
+
+}
+
+.image {	
+
+	all: unset;
+
+	font-size: 24;
+
+	font-family: "Trebuchet MS";
+
+	width: 1000;
+
+	height: 550;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+.imageCaption {
+
+	margin-top: 0;
+
+	padding-bottom: 5;
+
+	padding-top: 5;
+
+	width: 1000;
+
+    height: 34px;  
+	
+	background-color: lightgrey;
+        
+	font-size: 24;
+
+	font-weight: lighter;
+
+	text-align: center;
+
+}
+
+.footer {
+
+	padding-left: 220;
+
+	padding-right: 220;
+
+	width: 1000px;
+
+	height: 75px;
+
+	background-color: rgba(19, 41, 61);
+
+}
+
+.footerText {
+
+	align-items: top;
+
+	width: 500;
+
+	height: 25;
+
+	font-size: 20;
+
+	color: rgb(255, 255, 255);
+
+	font-family: "Trebuchet MS";
+
+}
+
+.topicSelection {
+
+	margin: auto;
+
+	padding: 25; 
+	
+	color: white; 
+	
+	line-height: 2; 
+	
+	font-size: 24; 
+	
+	text-align: left; 
+	
+	font-family: 'Trebuchet MS'; 
+	
+	text-decoration: underline;
+
+	letter-spacing: 1px;
+
+}
+
+.topicSelection:hover {
+
+	color: black;
+
+	transition: 0.75s;
+
+}
+
+.topicSection {
+
+	margin-top: 100;
+
+	padding-left: 220;
+
+	padding-right: 220;
+
+	width: 1000;
+
+	height: auto;
+
+}
+
+.topicText {
+
+	margin-bottom: 25; 
+	
+	text-align: center; 
+	
+	color: rgb(24, 67, 90); 
+	
+	font-weight: bold; 
+	
+	font-size: 30; 
+	
+	font-family: 'Trebuchet MS'; 
+	
+	text-align: center
+
+}
+
+.paragraphText {
+
+	font-weight: lighter; 
+	
+	font-size: 24;
+
+}
+
+/* This is the class of the arrow button used to swtich between images on the hardware and software web page carousel */
+.arrowButton {
+
+	margin-top: 280px;
+
+	padding: 10px;
+
+	width: 30;
+
+	height: 40;
+
+	float: right;
+
+	background-color: black;
+	
+	color: white;
+
+	opacity: 0.3;
+
+	font-size: 30;
+
+	text-align: center;
+
+}
+
+.arrowButton:hover {
+
+	opacity: 1;
+
+	transition: 1s;
+
+}
+
+.chessBoardTitle {
+
+	text-align: center;
+
+	font-weight: bold; 
+	
+	font-size: 28;
+
+}
+
+.chessBoard {
+
+	margin-left: 470;
+
+	margin-bottom: 25;
+		
+	width: 500;
+
+	height: 550;
+
+}
+
+.chessBoardButton {
+
+	float: left;
+
+	width: 100;
+
+	height: 50;
+
+	cursor: pointer;
+
+	background-color: rgb(221, 221, 221);;
+
+}
+
+.chessBoardButton:hover {
+
+	background-color: darkgrey;
+
+	transition: 0.75s;
+
+}
+
+.chessBoardButtonImage {
+
+	width: 40; 
+	
+	height: 40;
+
+}
+
+.chessBoardAnnotations {
+
+	float: left;
+
+	width: 500;
+
+	height: 550;
+
+	background-color: rgb(221, 221, 221);
+
+}
+
+.bibliographyText {
+
+	font-weight: lighter; 
+	
+	font-size: 24;
+
+	text-decoration: none;
+
+	color: black;
+
+	text-indent: 100px;
+
+}
+
+.bibliographyTextLink {
+
+	font-weight: lighter; 
+	
+	font-size: 24;
+
+	text-decoration: underline;
+
+	color: blue;
+
+}

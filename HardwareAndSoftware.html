@@ -1,0 +1,278 @@
+
+<!-- February–May 2022 -->
+<!-- Cedric Furman -->
+<!-- Project 2 -->
+<!-- This web page explains the history of hardware and software in chess -->
+
+<html>
+
+    <head>
+
+        <title> Technology in Chess </title>
+
+        <link rel = "icon" href = "Project2WebsiteLogo.png"> <!-- Gives the website's google tab a favicon (tab icon) -->
+
+        <link 
+        rel = "stylesheet"
+      	href = "https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      	integrity = "sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      	crossorigin = "anonymous"> <!-- The content delivery network (CDN) stylesheet of chessboardjs, an API that generates chess board graphics -->
+
+        <link rel = "stylesheet" href = "Project2.css">
+
+    </head>
+
+   <body style = "background-color: white; margin: 0; padding: 0;"> 
+    
+        <section class = "header">
+
+		    <img onclick = "home();" src = "Project2WebsiteLogo.png" class = "logo">
+
+		    <button id = "entryButton" onclick = "search();" type = "button" class = "entryButton"> Enter </button> <!-- This is the search bar entry button -->
+
+		    <input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search..."> <!-- This is the website's search bar -->
+
+	    </section>
+
+        <section class = "navigationBarSection"> <!-- This is the website's navigation bar -->
+
+            <ul class = "navigationBar">
+    
+                <li> <a style = "margin-left: 220;" href = "HardwareAndSoftware.html"> <br> Hardware and Software </a> </li>
+    
+                <li> <a href = "ArtificialIntelligence.html"> <br> Artificial Intellignece </a> </li> 
+    
+                <li> <a href = "CompetitivePlay.html"> <br> Competitive Play </a> </li>
+    
+                <li> <a href = "Broadcasting.html"> <br> Broadcasting </a> </li>
+    
+                <li> <a href = "Accessibility.html"> <br> Accessibility </a> </li>
+    
+            </ul>
+            
+        </section>
+
+        <section class = "informationSection" style = "margin-top: 25; padding-bottom: 25;">
+
+            <h2 style = "margin-left: 25; margin-top: 40; width: 490; color: rgba(28, 154, 255); font-weight: lighter; height: 20; float: left; font-family: 'Trebuchet MS'; font-size: 40; text-align: center;"> Hardware and Software </h2>
+
+            <div style = "margin-right: 25;  margin-top: 25; float: right; width: 475; height: 355; color: red;  background-image: url('DeepBlue.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: 75% 0%;"> </div>
+
+            <section style = "margin-left: 25; margin-top: 25; float: left; background-color: rgba(204, 111, 64); width: 487.5; height: 262.5;">
+
+                <div style = "margin-top: 30;">
+
+                    <a onclick = "selectTopic('H&STopic1');" class = "topicSelection"> Early Hardware </a>
+
+                    <br>
+
+                    <a onclick = "selectTopic('H&STopic2');" class = "topicSelection"> Modern Hardware </a>
+
+                    <br>
+
+                    <a onclick = "selectTopic('H&STopic3');" class = "topicSelection"> Chess Software </a>
+
+                    <br>
+
+                    <a onclick = "selectTopic('H&STopic4');" class = "topicSelection"> Online Chess </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class = "topicSection">
+
+            <h1 class = "topicText"> Introduction </h1>
+
+            <h2 class = "paragraphText"> Chess went on for a millennium without interference by hardware and software, but incrimental improvement across the contemporary era have collectively altered the fabric of the game. From the chess clock to dedicated chess computers to websites, chess has experienced numerous advancements. </h2>
+
+            <h2 class = "paragraphText"> This web page will analyze the hardware and software changes in chess through the categories of early and modern hardware, chess software, and online chess.</h2>
+
+        </section>
+
+        <section id = "H&STopic1" class = "topicSection">
+
+            <h1 class = "topicText"> Early Hardware </h1>
+
+            <h2 class = "paragraphText"> Tehcnological hardware (and especially) software were not present in chess until the late 1900s, but that did not stop people from pretending. The "Mechanical Turk" (1770), which used an automaton chess player and a hidden human player to micic (imaginary) AI, is a prime example. </h2>
+
+            <img src = "AutomatonChessPlayer.jpg" class = "image">
+
+            <h2 class = "imageCaption"> "The Mechanical Turk," a fake chess-playing machine, 1770 </h2>
+
+            <h2 class = "paragraphText"> The machine forshadowed chess computers that would one day be a reality, but in its 100 year lifetime, it served as an elaborate hoax. Despite its mischievous nature, the "Mechanical Turk" was nonetheless a magnificent machine: it used a series of levers and magnets, to control the automaton and communicate the position to the grandmaster (GM) hiding inside. </h2>
+
+            <h2 class = "paragraphText"> On a more pragmatic note, chess, as its stereotypes suggest, is an extremly long game. For example, spectators of a game by Howard Staunton described the experience negatively, as it took an entire 14 and a half hours to properly complete the game. This dilema prohibited the rise in popularity of watching chess, and resultingly, work on potential solutions followed. </h2>
+
+            <h2 class = "paragraphText"> A first idea was proposed in 1852, but only came into fruition between 1861 and 1875. Sand glasses were to be used to limit each player's total time, making them precursors to modern chess clocks. Unfortunately, it was found out that they had a plethora of problems. Temperature largely affected the accuracy of the make-shift clocks, which is not to mention their inherent inexactness, and they were prone to mix-ups on which side of the glass was whose. </h2>
+
+            <h2 class = "paragraphText"> Between 1866 and 1873, watches were used to tell the amount of time expended by each player, which was deductable from a total allocation. This process proved to be maticulous, and, once again, susceptible to mistakes, but the importance of this development was paving the way for the "tumbling" chess clock in 1883. </h2>
+
+            <img src = "TumblingClock.jpg" class = "image">
+
+            <h2 class = "imageCaption"> "Tumbling" chess clock, 1883 </h2>
+
+            <h2 class = "paragraphText"> The "tumbling" chess clock consisted of two small pendulum clocks, those that move based on their suspension from a fulcrum, which was a scale in this case. Once a player finished their move, they would move tip scale so that their clock stopped ticking, and their openent's would. The streamlined timing of the "tumbling" chess clock introduced the presently ubiquitous principle of losing a game once out of time. By 1884, the first chess clock was patented, and by 1886, they were commonplace for tournaments. For a century afterwards they continued to experience technological augmentations, but those are much overshadowed by other types of hardware and software. </h2>
+
+        </section>
+
+        <section id = "H&STopic2" class = "topicSection">
+
+            <h1 class = "topicText"> Modern Hardware </h1>
+
+            <h2 class = "paragraphText"> In the second half of the 20th century, chess hardware went from game-improving enhancements to playable AI that came to dominate over human players. Chess computers, and the electronic chess boards that often accompany them, have gone from minor gimmics to major players. Chess computers use algorithms to preview the different positions that may stem from each move they may play, and them evaluate their best play using that information. </h2>
+
+            <h2 class = "paragraphText"> The first (real) chess computer was El Ajedrecista, a bulky machine and board that was only capable of solving king-rook endgames (the most simple). In today's standards, the board seems like an infinitesimal accomplishment, but it was a groundbreaking achievement for 1912. </h2>
+
+            <h2 class = "paragraphText"> The decades after El Ajedrecista were mostly populated by research into the development of complete game-playing chess algorithms. The first to complete such a feat was actually Alan Turing. His program, named Turochamp was a (for the time) complex algorithm developed on paper, which was unable to be run on the computers of the day, and was therefore never adapted into an AI. Nonwithstanding, Turing actually manually executed the code, and was able to play against it. </h2>
+
+            <h2 class = "paragraphText"> By 1957, chess computers were able to play entire games, but still without graphics or in a timely manner, and in 1962, Kotok-McCarthy was able to play proper games against humans. On the note of inefficiency, a 1966 match between Kotok-McCarthy and the chess computer of the Moscow Institute for Theoretical and Experimental Physics lasted nine months. It took another decade for chess computers to play against humans, and in 1967, the Mac Hack was the first to win a tournament game against a human. </h2>
+
+            <h2 class = "paragraphText"> By 1976, chess computers were starting to become stronger, faster, and thus commerically availible. A notably product was the Boris chess computer (1977), which had only 256 byte RAM, but came with a board, making it more convenient and sucessful. A couple years later, in 1979, the Fidelity Voice Chess Challenger followed a similar format to Boris, and added a speech function to improve the experience of playing a computer. In 1983, the Milton Bradley Grandmaster took things even further, and was able to move pieces by itself, yet again ameliorating game quality. Sadly, by the 1990s, the competitive chess computer market began to fade since their machines could not compete with the processing power of PCs. </h2>
+
+            <h2 class = "paragraphText"> One area which still maintained the use of  </h2>
+
+            <a onclick = "displayPreviousImage(0);" class = "arrowButton" style = "float: left;"> &#8249; </a>
+
+            <img id = "carousel1" src = "BorisChessComputer.jpg" class = "image" style = "width: 900;"> 
+
+            <a onclick = "displayNextImage(0);" class = "arrowButton"> &#8250; </a>
+
+            <h2 id = "carouselCaption1" class = "imageCaption" style = "margin-left: 50; width: 900;"> Boris chess computer, 1977 </h2>
+
+            <h2 class = "paragraphText"> Fortunately, dedicated chess computers still held out in the area of supercomputers, most famous was IBM's Deep Blue, a project that began in 1989 and culminated in two matches against Gary Kasparov, the world chess champion at the time. The 1996 match resulted in a loss for Deep Blue, an outcome expected by the public, but in the 1997 rematch, Deep Blue somehow defeated Kasparov. Game 6 of the match is when Deep Blue secured its victory, and marks a turning point in the role of computers in chess. An analysis of the game is featured below. </h2>
+
+        </section>
+
+        <section class = "topicSection" style = "height: 53;"> 
+
+            <h1 class = "chessBoardTitle"> Deep Blue (white) - Gary Kasparov (black), 1997, Game 6 </h1>
+
+        </section>
+
+        <section class = "chessBoard">
+
+            <div id = "KasparovDeepBlueRematchGame6" style = "width: 500px; height: 500px;"> </div>
+
+            <button class = "chessBoardButton" id = "board1DoubleLeft" onclick = "fastBackward()"> <img class = "chessBoardButtonImage" src = "DoubleLeft.png"> </button>
+
+            <button class = "chessBoardButton" id = "board1Left" onclick = "backward()"> <img class = "chessBoardButtonImage" style = "width: 20;" src = "Left.png"> </button>
+
+            <button class = "chessBoardButton" id = "board1Pause" onclick = "pause()"> <img class = "chessBoardButtonImage" src = "Pause.png"> </button>
+
+            <button class = "chessBoardButton" id = "board1Right" onclick = "forward()"> <img class = "chessBoardButtonImage" style = "width: 20;" src = "Right.png"> </button>
+
+            <button class = "chessBoardButton" id = "board1DoubleRight" onclick = "fastForward()"> <img class = "chessBoardButtonImage" src = "DoubleRight.png"> </button>
+
+        </section>
+
+        <section id = "chessBoardAnnotationsContainer" class = "chessBoard" style = "height: 0;">
+
+            <div id = "chessBoardAnnotations" class = "paragraphText" style = "height: 0; text-align: center;"> </div>
+
+        </section>
+
+        <section id = "H&STopic3" class = "topicSection">
+
+            <h1 class = "topicText"> Chess Software </h1>
+
+            <h2 class = "paragraphText"> With the growth in power of PCs, there existed a new opportunity to develop games for it. These games would have algorithms like those of prior chess computers, but stronger, and also contained GUIs, making them infinitely more playable. The first PC chess game to be released was Chess Master 2000, which came out in 1986, and looked ancient by that year)—its highly pixelated graphics were in dire need of being upgraded. Battle Chess came out two years later (1988), and featured a well-designed board where pieces would acutally have battle animations when the fought, some even consider it to have inspired wizard's chess in Harry Potter. There is still some purely AI-based chess software, though most digitial chess is now played online. Mac OS comes with a version of chess installed, and effectively acts as a better-looking version of Chess Master 2000, there are also dedicated chess video games on some consoles. </h2>
+
+            <a onclick = "displayPreviousImage(1);" class = "arrowButton" style = "float: left;"> &#8249; </a>
+
+            <img id = "carousel2" src = "ChessMaster2000.jpg" class = "image" style = "width: 900;"> 
+
+            <a onclick = "displayNextImage(1);" class = "arrowButton"> &#8250; </a>
+
+            <h2 id = "carouselCaption2" class = "imageCaption" style = "margin-left: 50; width: 900;"> Chess Master 2000, 1986
+            </h2>
+
+        </section>
+
+        <section id = "H&STopic4" class = "topicSection">
+
+            <h1 class = "topicText"> Online Chess </h1>
+
+            <h2 class = "paragraphText"> Playing against a computer has its benefits, your oponent is stronger than any player in the world, and you can take as long as you need for a move, but they are less logical, and less intneresting to play against. Chess has long been a social game, and playing against human oponents is favoured by almost all. It's therefore no suprise when the <a class = "bibliographyTextLink" onclick = "openLink(0)"> Internet Chess Club (ICC) </a> was released in 1992. It allowed players to play games through the internet, but only in coordinates (at the time), this marked the beginning of the new era of online chess. </h2>
+
+            <h2 class = "paragraphText"> The internet's growth in popularity helped lead to even more ambitious online chess websites. Today, players can pick up a game at any moment, against a player from anywhere in the world who did so simultaneously. Chess AI has now been relegated for game analysis, while player-vs-player online chess has flourished. The most well-known players in the field are <a class = "bibliographyTextLink" onclick = "openLink(1)"> Chess.com </a> (the most used) and <a class = "bibliographyTextLink" onclick = "openLink(2)"> Lichess</a> (which are free), along with many others. </h2>
+
+            <h2 class = "paragraphText">  </h2>
+
+            <img src = "ChessCom.jpg" class = "image">
+
+            <h2 class = "imageCaption"> A Chess.com Advertisement </h2>
+          
+            <h2 class = "paragraphText"> The sucess of online chess has led to new opportunities for the game as a whole. Tournaments are now being hosted exclusively online, as they might in Esports, the digital format also greatly expands the potential audience. On <a class = "bibliographyTextLink" onclick = "openLink(3)"> Twitch</a>, a video streaming service, 41 million hours of chess were watched between March and August 2020. One tournament broadcasted there, PogChamps, a battle between popular internet personalities (all amateurs at chess) became the most viewed event on the platform for a time. The clip below (an example of the scholar's mate) even received over 13 million views. </h2>
+
+            <iframe class = "image" controls src = "https://www.youtube.com/embed/e91M0XLX7Jw"> </iframe>
+
+        </section>
+
+        <section class = "informationSection" style = "margin-bottom: 25; margin-left: 220; margin-top: 100; width: 1000;">
+
+            <h1 class = "topicText" style = "padding-top: 96;"> Chess Hardware and Software Quiz </h1>
+
+            <h2 id = "question" class = "paragraphText" style = "text-align: center;"> Press start to begin! </h2>
+
+            <h2 id = "answer" class = "paragraphText" style = "float: bottom; width: 100%; text-align: center;"> </h2>
+
+            <tr style = "float: center; width: 1000; position: absolute;">
+
+                <td> <input id = "answerBox" type = "text" class = "searchBar" style = "margin-left: 370; float: left;" placeholder = "Answer..."> </td> <!-- This is where the user enters their answers-->
+
+                <td> <button id = "submitButton" onclick = "quizUser();" type = "button" class = "entryButton" style = "float: left;"> Start </button> </td> <!-- This is where the user confirms their answers -->
+
+            </tr> 
+
+        </section>
+
+        <section class = "topicSection" style = "margin-bottom: 100;">
+
+            <h1 class = "topicText"> Bibliography </h1>
+
+            <h2 class = "bibliographyText"> Benj, Edwards. “A Brief History of Computer Chess.” PCWorld, May 6, 2013. <a class = "bibliographyTextLink" onclick = "openLink(4)"> https://www.pcworld.com/article/451599/a-brief-history-of-computer-chess.html. </a>
+
+            <h2 class = "bibliographyText"> Chess Maniac. "The Chess Clock — A History." June 11, 2012. <a class = "bibliographyTextLink" onclick = "openLink(5)"> http://www.chessmaniac.com/the-chess-clock-a-history/ </a> </h2>
+
+            <h2 class = "bibliographyText"> IBM. “Deep Blue.” March 7, 2012. <a class = "bibliographyTextLink" onclick = "openLink(6)"> https://www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/. </a>
+
+            <h2 class = "bibliographyText"> Jackson, John. "Technology in Chess." Chess-site, June 13, 2018. <a class = "bibliographyTextLink" onclick = "openLink(7)"> https://www.chess-site.com/articles/technology-in-chess/. </a> </h2>
+
+            <h2 class = "bibliographyText"> Wikipedia Contributors. “Computer Chess.” April 20, 2022. <a class = "bibliographyTextLink" onclick = "openLink(8)"> https://en.wikipedia.org/wiki/Computer_chess#History. </a>
+
+            <h2 class = "bibliographyText"> Wikipedia. “Online Chess.” March 31, 2022. <a class = "bibliographyTextLink" onclick = "openLink(9)"> https://www.wikipedia.org/wiki/Online_chess#:~:text=Online%20chess%20has%20existed%20in,chess%20websites%20have%20been%20developed. </a>
+
+            <h2 class = "bibliographyText"> Wikipedia Contributors. “Turochamp.” April 10, 2022. <a class = "bibliographyTextLink" onclick = "openLink(10)"> https://en.wikipedia.org/wiki/Turochamp. </a>
+
+            <h2 class = "bibliographyText"> Winter, Edward. “Chess and Computers by Edward Winter." Chess History, 2013. <a class = "bibliographyTextLink" onclick = "openLink(11)"> https://www.chesshistory.com/winter/extra/computers.html. </a>
+
+        </section>
+
+        <section class = "footer">
+
+            <h4 class = "footerText" style = "width: 400; text-align: left; float: left;"> Cedric Furman </h4>
+
+            <button class = "entryButton" onclick = "sendEmail()" style = "margin-right: 0; width: 200; float: left;"> Share </button>
+
+            <h4 class = "footerText" style = "width: 400; text-align: right; float: left;"> May, 2022 </h4>
+
+        </section>
+
+        <script 
+        src = "https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity = "sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin = "anonymous"> </script> <!-- The CDN js file of jQuery—required for the functionality of chessboardjs -->
+
+		<script 
+        src = "https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity = "sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin = "anonymous"> </script> <!-- The CDN js file of chessboardjs -->
+        
+        <script src= "Project2.js"> </script> <!-- The website also uses an external script file -->
+
+    </body>
+
+</html>
